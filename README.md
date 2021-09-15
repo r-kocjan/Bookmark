@@ -5,47 +5,35 @@ This is a solution to the [Bookmark landing page challenge on Frontend Mentor](h
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
-### The challenge
-
-Users should be able to:
-
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Receive an error message when the newsletter form is submitted if:
-  - The input field is empty
-  - The email address is not formatted correctly
-
 ### Screenshot
 
-![](./screenshot.jpg)
+#### Desktop
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+![Zrzut ekranu 2021-09-15 145433](https://user-images.githubusercontent.com/65490113/133437802-55911d99-c31b-4227-a9e4-38d7b0ebc960.png)
+![Zrzut ekranu 2021-09-15 145459](https://user-images.githubusercontent.com/65490113/133437806-686c98c4-49b5-4ce6-8120-ce1a17d7fe0d.png)
+![Zrzut ekranu 2021-09-15 145538](https://user-images.githubusercontent.com/65490113/133437808-33f521a7-b993-4630-89ae-f1eaba60273b.png)
+![Zrzut ekranu 2021-09-15 145342](https://user-images.githubusercontent.com/65490113/133437810-c298491d-d96c-4e6d-bdf4-740916614bac.png)
+![Zrzut ekranu 2021-09-15 145403](https://user-images.githubusercontent.com/65490113/133437813-a0b78760-2900-47f3-8a09-817131ab5b7f.png)
+![Zrzut ekranu 2021-09-15 145418](https://user-images.githubusercontent.com/65490113/133437814-afb04388-7b4e-482f-b454-765c8ce806d7.png)
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+#### Mobile
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+![Uploading![Zrzut ekranu 2021-09-15 145646](https://user-images.githubusercontent.com/65490113/133437858-3e8df92b-cf0f-47c5-95f8-9e435e3dc474.png)
+![Zrzut ekranu 2021-09-15 145716](https://user-images.githubusercontent.com/65490113/133437860-84ed600e-9efa-4f48-947b-e79a2254fd35.png)
+![Zrzut ekranu 2021-09-15 145730](https://user-images.githubusercontent.com/65490113/133437861-40938a38-8e91-4d38-80b1-ddf7c2aac441.png)
+![Zrzut ekranu 2021-09-15 145558](https://user-images.githubusercontent.com/65490113/133437864-7bb1e21e-425a-4c3a-945e-9c522b14791e.png)
+![Zrzut ekranu 2021-09-15 145608](https://user-images.githubusercontent.com/65490113/133437867-3fc8adf6-8c07-4145-a64b-2866b2f12b8f.png)
+ Zrzut ekranu 2021-09-15 145632.png…]()
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
-### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
 
@@ -55,60 +43,12 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
 - [Styled Components](https://styled-components.com/) - For styles
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
-### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+Remigiusz :)
