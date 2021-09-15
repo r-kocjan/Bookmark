@@ -29,6 +29,10 @@ const Container = styled.section`
     width: 1128px;
     margin: 0 auto;
     text-align: center;
+
+    @media (max-width: 768px) {
+      width: 95vw;
+    }
   }
   h5 {
     font-size: 1.6rem;
@@ -36,11 +40,18 @@ const Container = styled.section`
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-bottom: 5rem;
+    @media (max-width: 768px) {
+      font-size: 1.8rem;
+    }
   }
   h2 {
     font-size: 3rem;
     letter-spacing: 1px;
     margin-bottom: 3rem;
+    @media (max-width: 768px) {
+      font-size: 2.8rem;
+      margin-bottom: 5rem;
+    }
   }
   .cta {
     width: 45%;
@@ -48,6 +59,10 @@ const Container = styled.section`
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+    @media (max-width: 768px) {
+      width: 100%;
+      flex-direction: column;
+    }
   }
   input {
     width: 72%;
@@ -55,6 +70,11 @@ const Container = styled.section`
     border-radius: 0.6rem;
     border: 0;
     margin-right: 0.5rem;
+    @media (max-width: 768px) {
+      width: 90%;
+      margin: 0;
+      margin-bottom: 2rem;
+    }
   }
   input:focus {
     outline: none;
@@ -78,6 +98,9 @@ const Container = styled.section`
     background-color: hsl(0, 94%, 66%);
     color: hsl(229, 8%, 90%);
 
+    @media (max-width: 768px) {
+      width: 90%;
+    }
     &:hover {
       border: 3px solid hsl(0, 94%, 66%);
       color: hsl(0, 94%, 66%);

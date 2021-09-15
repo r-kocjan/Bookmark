@@ -28,6 +28,11 @@ const Container = styled.div`
   display: flex;
   align-items: center;
 
+  @media (max-width: 768px) {
+    width: 95vw;
+    flex-direction: column;
+  }
+
   .illustration-img {
     margin-right: 15rem;
     position: relative;
@@ -35,6 +40,17 @@ const Container = styled.div`
     img {
       height: 400px;
       width: 550px;
+    }
+    @media (max-width: 768px) {
+      margin-right: 0;
+      width: auto;
+
+      margin-bottom: 15rem;
+      img {
+        width: 100%;
+
+        height: auto;
+      }
     }
     &::before {
       content: "";
@@ -47,10 +63,18 @@ const Container = styled.div`
       background-color: hsl(231, 69%, 60%);
       z-index: -1;
       border-radius: 50rem;
+
+      @media (max-width: 768px) {
+        height: 27rem;
+        bottom: -15%;
+      }
     }
   }
 `;
 const Content = styled.div`
+  @media (max-width: 768px) {
+    text-align: center;
+  }
   h2 {
     font-size: 3.3rem;
     color: hsl(229, 31%, 21%);
@@ -61,6 +85,11 @@ const Content = styled.div`
     font-size: 2rem;
     line-height: 1.4;
     margin-bottom: 2.5rem;
+    @media (max-width: 768px) {
+      width: 90%;
+      margin: 0 auto;
+      margin-bottom: 2.5rem;
+    }
   }
   .button {
     padding: 1.5rem 2.5rem;

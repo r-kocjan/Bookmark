@@ -46,15 +46,28 @@ const Container = styled.footer`
     margin: 0 auto;
     display: flex;
     align-items: center;
+
+    @media (max-width: 768px) {
+      width: 95vw;
+      flex-direction: column;
+    }
   }
   .footer-logo {
     margin-right: 10rem;
+    @media (max-width: 768px) {
+      margin: 0;
+      margin-bottom: 3.5rem;
+    }
   }
   .footer-menu {
     display: flex;
     list-style: none;
     color: #fff;
     gap: 3rem;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      text-align: center;
+    }
   }
   .social {
     display: flex;
@@ -63,6 +76,10 @@ const Container = styled.footer`
     align-items: center;
     margin-left: auto;
     cursor: pointer;
+    @media (max-width: 768px) {
+      margin: 0;
+      margin-top: 5rem;
+    }
   }
   li {
     cursor: pointer;

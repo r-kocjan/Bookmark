@@ -48,6 +48,10 @@ const Container = styled.section`
   text-align: center;
   padding-bottom: 20rem;
 
+  @media (max-width: 768px) {
+    width: 95vw;
+  }
+
   h2 {
     font-size: 3.3rem;
     color: hsl(229, 31%, 21%);
@@ -61,17 +65,37 @@ const Container = styled.section`
     font-size: 2rem;
     line-height: 1.4;
   }
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 3.2rem;
+    }
+    p {
+      width: 90%;
+    }
+  }
 `;
 const Browsers = styled.div`
   justify-content: center;
 
   align-items: flex-start;
   display: flex;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
   .firefox {
     margin-top: 6rem;
   }
   .opera {
     margin-top: 12rem;
+  }
+  @media (max-width: 768px) {
+    .firefox {
+      margin-top: 6rem;
+    }
+    .opera {
+      margin-top: 6rem;
+    }
   }
   .card {
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
@@ -79,6 +103,9 @@ const Browsers = styled.div`
     border-radius: 1rem;
     transition: all 167ms;
     position: relative;
+    @media (max-width: 768px) {
+      width: 80%;
+    }
     &::before {
       content: "";
       background-image: url("/images/bg-dots.svg");
@@ -109,6 +136,9 @@ const Browsers = styled.div`
 
     &:not(:last-child) {
       margin-right: 5rem;
+      @media (max-width: 768px) {
+        margin-right: 0;
+      }
     }
 
     .button-blue {

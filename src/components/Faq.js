@@ -112,10 +112,21 @@ const Container = styled.section`
   margin: 0 auto;
   text-align: center;
   padding-bottom: 15rem;
+
+  @media (max-width: 768px) {
+    width: 95vw;
+  }
   h2 {
     font-size: 3.3rem;
     color: hsl(229, 31%, 21%);
     margin-bottom: 2.5rem;
+    @media (max-width: 768px) {
+      font-size: 3.2rem;
+      width: 70%;
+      margin: 0 auto;
+      margin-bottom: 2.5rem;
+      line-height: 1.4;
+    }
   }
   p {
     width: 50%;
@@ -124,6 +135,9 @@ const Container = styled.section`
     color: hsl(229, 8%, 60%);
     font-size: 2rem;
     line-height: 1.4;
+    @media (max-width: 768px) {
+      width: 90%;
+    }
   }
   .button-blue {
     padding: 1.5rem 2.5rem;
@@ -154,13 +168,22 @@ const Questions = styled.div`
   margin-bottom: 5rem;
   text-align: left;
 
+  @media (max-width: 768px) {
+    width: 90%;
+  }
   h3 {
     font-size: 2.2rem;
     font-weight: lighter;
+    @media (max-width: 768px) {
+      font-size: 2rem;
+    }
   }
   p {
     width: 100%;
     margin: 0;
+    @media (max-width: 768px) {
+      font-size: 1.9rem;
+    }
   }
   .question {
     padding: 2rem 0;

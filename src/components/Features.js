@@ -11,12 +11,17 @@ const Features = () => {
 
   useEffect(() => {
     const items = document.querySelectorAll(".select-item");
+    const colors = document.querySelectorAll(".color");
     items.forEach((item) => {
       item.addEventListener("click", function (e) {
         items.forEach((el) => {
           el.classList.remove("active");
         });
+        colors.forEach((color) => {
+          color.classList.remove("color-active");
+        });
         item.classList.add("active");
+        e.target.parentNode.children[1].classList.add("color-active");
         if (e.target.textContent === "Simple Bookmarking") {
           marker.current.style.left = "0%";
           setSelected({
@@ -43,6 +48,7 @@ const Features = () => {
     });
   }, []);
   const marker = useRef(null);
+
   return (
     <div>
       <Container>
@@ -56,12 +62,15 @@ const Features = () => {
           <ul className="select">
             <li>
               <a className="select-item active">Simple Bookmarking</a>
+              <div className="color color-active"></div>
             </li>
             <li>
               <a className="select-item">Speedy Searching</a>
+              <div className="color"></div>
             </li>
             <li>
               <a className="select-item">Easy Sharing</a>
+              <div className="color"></div>
             </li>
           </ul>
           <div className="line">
@@ -81,12 +90,19 @@ const Container = styled.section`
   display: flex;
   flex-direction: column;
   text-align: center;
+  @media (max-width: 768px) {
+    width: 95vw;
+    margin-top: 20vh;
+  }
 `;
 const About = styled.div`
   h2 {
     font-size: 3.3rem;
     color: hsl(229, 31%, 21%);
     margin-bottom: 2.5rem;
+    @media (max-width: 768px) {
+      font-size: 3rem;
+    }
   }
   p {
     width: 50%;
@@ -95,6 +111,9 @@ const About = styled.div`
     color: hsl(229, 8%, 60%);
     font-size: 2rem;
     line-height: 1.4;
+    @media (max-width: 768px) {
+      width: 90%;
+    }
   }
   .select {
     list-style: none;
@@ -103,6 +122,39 @@ const About = styled.div`
     width: 65%;
     margin: 0 auto;
     transition: all 250ms;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 3rem;
+      li {
+        margin: 2rem 0;
+        position: relative;
+      }
+      .color {
+        display: none;
+        height: 3px;
+        width: 35%;
+        bottom: -4rem;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        background-color: hsl(0, 94%, 66%);
+      }
+      .color-active {
+        display: block;
+      }
+    }
+    .select-item {
+      @media (max-width: 768px) {
+        margin-bottom: 3rem;
+        border-bottom: 1px solid hsl(229, 8%, 75%);
+        position: absolute;
+        padding-bottom: 1.5rem;
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
     .select-item:hover {
       color: hsl(0, 94%, 66%);
     }
@@ -122,6 +174,10 @@ const About = styled.div`
     height: 1px;
     background-color: hsl(229, 8%, 90%);
     position: relative;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
   .marker {
     width: 250px;
